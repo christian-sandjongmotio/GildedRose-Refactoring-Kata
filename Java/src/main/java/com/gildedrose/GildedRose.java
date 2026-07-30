@@ -2,7 +2,6 @@ package com.gildedrose;
 
 /**
  * Gère la mise à jour quotidienne de l'inventaire de la Gilded Rose.
- * <p>
  * Chaque type d'article possède ses propres règles d'évolution concernant
  * sa date limite de vente et sa qualité.
  */
@@ -22,7 +21,6 @@ class GildedRose {
 
     /**
      * Initialise la Gilded Rose avec l'inventaire fourni.
-     *
      * @param items articles à mettre à jour quotidiennement
      */
     public GildedRose(Item[] items) {
@@ -40,7 +38,6 @@ class GildedRose {
 
     /**
      * Applique à un article la règle d'évolution correspondant à son type.
-     *
      * @param item article à mettre à jour
      */
     private void update(Item item) {
@@ -65,7 +62,6 @@ class GildedRose {
 
     /**
      * Met à jour un pass selon la proximité ou le dépassement du concert.
-     *
      * @param item Backstage pass à mettre à jour
      */
     private void updateBackstagePass(Item item) {
